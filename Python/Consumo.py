@@ -9,9 +9,17 @@ Apresente o valor que representa o consumo médio do automóvel com 3 casas apó
 
 """
 
-distancia_percorrida= int(input("Digite a distância percorrida: "))
-total_combustivel_gasto= float(input("Digite o total de combustível gasto: "))
+#Solicita ao usuário a distância total percorrida.
+#O valor digitado é convertido de texto para um número inteiro (int) e armazenado na variável.
+distancia_percorrida = int(input("Digite a distância percorrida: "))
 
-consumo= distancia_percorrida/total_combustivel_gasto
+#Solicita ao usuário o total de combustível gasto.
+#O valor digitado é convertido para um número decimal (float) e armazenado na variável.
+total_combustivel_gasto = float(input("Digite o total de combustível gasto: "))
 
+#Calcula o consumo médio dividindo a distância pelo combustível gasto.
+consumo = distancia_percorrida / total_combustivel_gasto
+
+#Exibe o resultado na tela formatado.
+#O ponto de formatação ":.3f" garante que o número terá exatamente 3 casas decimais.
 print(f"{consumo:.3f} km/l")
